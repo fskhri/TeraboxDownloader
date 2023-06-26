@@ -66,7 +66,7 @@ const Index = () => {
   return (
     <Container className='cont-main'>
       <div className='text-center mt-2'>
-        <h3 className="tdl-heading">Terabox Direct Link Generator</h3>
+        <h3 className="tdl-heading">Terabox Downloader</h3>
       </div>
 
       <Form onSubmit={handleGetDetail}>
@@ -80,10 +80,9 @@ const Index = () => {
 
         <div className='text-center form-btn'>
           <Button variant="primary" type="submit" disabled={isLoading['main']} >
-            Get Detail {isLoading['main'] && <Spinner className='ms-2' as="span" animation="border" size="sm" />}
+            Download {isLoading['main'] && <Spinner className='ms-2' as="span" animation="border" size="sm" />}
           </Button>
           <br/>
-          <p>Source: <a href="https://github.com/sapthesh/terabox-directlink/">Terabox DL</a></p>
         </div>
       </Form>
 
